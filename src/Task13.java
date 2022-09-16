@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.Random;
+import java.util.*;
 
 public class Task13 {
     public static ArrayList<Integer> getRandomArrayList() {
@@ -23,6 +22,7 @@ public class Task13 {
             }
             arr = newArr;
         }
+        Collections.sort(randomNumbers);
         return randomNumbers;
     }
 
@@ -48,7 +48,7 @@ public class Task13 {
             }
             range = newRange;
         }
-
+        Arrays.sort(randomNumbers);
         return randomNumbers;
     }
 }
